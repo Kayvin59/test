@@ -1,9 +1,7 @@
 <?php
 
-$file = fopen("texte.txt", "r");
-var_dump(fread($file, filesize("texte.txt")));
-fclose($file);
-//Utiliser les 3 fonctions systématiquement
+//fonction equivalentes (lecture)
+echo file_get_contents("texte.log");
 
 //Pour ecrire dans un fichier
 $file = fopen("texte.log", "a");
